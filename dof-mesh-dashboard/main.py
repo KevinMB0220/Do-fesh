@@ -5,9 +5,12 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from core.pipeline import run_pipeline, reset_pipeline
-from core.attack_engine import Qwen3Attacker
+from core.attack_engine import HermesAttacker
 from core.metrics import SecurityMetrics
 
 app = FastAPI(title="DOF-MESH Governance Dashboard", version="0.8.0")
@@ -24,7 +27,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # State global (en producción: Redis o DB)
 metrics = SecurityMetrics()
-attacker = Qwen3Attacker()
+attacker = HermesAttacker()
 attack_history = []  # últimos 100 ataques
 
 
@@ -43,7 +46,7 @@ def serve_dashboard():
 def simulate_attack(req: AttackRequest):
     """
     Simula un ataque al pipeline DOF-MESH.
-    Si payload está vacío, el attacker (Qwen3) genera uno aleatorio.
+    Si payload está vacío, el attacker (Hermes) genera uno aleatorio.
     """
     payload = attacker.generate_attack(req.category, req.payload)
     result = run_pipeline(payload, req.category, req.context)
