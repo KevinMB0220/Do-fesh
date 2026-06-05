@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from typing import Optional
 import re
+import z3
 
 @dataclass
 class LayerResult:
@@ -48,16 +49,45 @@ EXFIL_PATTERNS = [
 
 
 class GovernanceLayer:
-    """C1 — DET — peso: 0.35"""
-    ID, NAME, WEIGHT = "C1", "Governance", 0.35
+    """C1 — DET/Z3 — peso: 0.35"""
+    ID, NAME, WEIGHT = "C1", "Governance (Z3)", 0.35
 
     def evaluate(self, payload: str, context: dict) -> LayerResult:
         p = payload.lower()
-        for pat in GOAL_HIJACK_PATTERNS:
-            if re.search(pat, payload, re.IGNORECASE):
-                return LayerResult(self.ID, self.NAME, False,
-                    f"Governance invariant violation — pattern: '{pat}'", 0.97)
-        return LayerResult(self.ID, self.NAME, True, "Governance check passed", 1.0)
+        
+        # 1. Definir variables booleanas en Z3 para cada patrón
+        z3_vars = [z3.Bool(f"pattern_{i}") for i in range(len(GOAL_HIJACK_PATTERNS))]
+        
+        # 2. Invariante de Seguridad: "El payload es seguro si NINGÚN patrón está presente"
+        IsSafe = z3.Bool("IsSafe")
+        invariant = IsSafe == z3.And([z3.Not(var) for var in z3_vars])
+        
+        # 3. Construir el motor de resolución (Solver)
+        solver = z3.Solver()
+        solver.add(invariant)
+        
+        # 4. Asignar los "Hechos" observados en el texto a las variables Z3
+        violation_reason = None
+        for i, pat in enumerate(GOAL_HIJACK_PATTERNS):
+            is_present = bool(re.search(pat, payload, re.IGNORECASE))
+            if is_present and not violation_reason:
+                violation_reason = pat
+            solver.add(z3_vars[i] == is_present)
+            
+        # 5. Comprobar satisfacibilidad y extraer la demostración matemática
+        result = solver.check()
+        
+        if result == z3.sat:
+            model = solver.model()
+            is_compliant = z3.is_true(model[IsSafe])
+            
+            if is_compliant:
+                return LayerResult(self.ID, self.NAME, True, "Z3 Invariant proved: SAFE", 1.0)
+            else:
+                return LayerResult(self.ID, self.NAME, False, f"Z3 Invariant violation proved — pattern: '{violation_reason}'", 0.99)
+        else:
+            # unsat o unknown
+            return LayerResult(self.ID, self.NAME, False, "Z3 Solver failed to prove safety invariant", 0.99)
 
 
 class SafetyLayer:
