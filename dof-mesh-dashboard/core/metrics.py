@@ -15,10 +15,12 @@ class SecurityMetrics:
     total_attacks: int = 0
     blocked_attacks: int = 0
     category_stats: dict = field(default_factory=lambda: {
-        "prompt_injection": {"total": 0, "blocked": 0},
-        "jailbreak":        {"total": 0, "blocked": 0},
-        "goal_hijacking":   {"total": 0, "blocked": 0},
-        "data_exfil":       {"total": 0, "blocked": 0},
+        "prompt_injection":          {"total": 0, "blocked": 0},
+        "jailbreak":                 {"total": 0, "blocked": 0},
+        "goal_hijacking":            {"total": 0, "blocked": 0},
+        "data_exfil":                {"total": 0, "blocked": 0},
+        "contratacion_publica":      {"total": 0, "blocked": 0},
+        "compra_publica_innovadora": {"total": 0, "blocked": 0},
     })
 
     def record(self, result: AttackResult):

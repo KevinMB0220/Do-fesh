@@ -1,0 +1,51 @@
+REPORTE DOF-SECOP ANTIOQUIA
+========================================
+
+Generado: 2026-07-01T18:27:05
+Contratos únicos: 24388
+Valor total aproximado: 40,518,233,524,297
+Contratos >= 500M: 5608
+Contratación directa >= 500M: 3112
+
+TOP ENTIDADES
+- INSTITUCIÓN UNIVERSITARIA ITM: 1950
+- DISTRITO ESPECIAL DE CIENCIA TECNOLOGIA E INNOVACION DE MEDELLIN: 1637
+- DEPARTAMENTO DE ANTIOQUIA//: 1131
+- Institución Universitaria Pascual Bravo COMPRADOR: 796
+- INSTITUTO DE DEPORTES Y RECREACION DE MEDELLIN: 654
+- MUNICIPIO DE ENVIGADO*: 594
+- MUNICIPIO DE SABANETA: 561
+- ICBF REGIONAL ANTIOQUIA: 540
+- INSTITUCIÓN UNIVERSITARIA COLEGIO MAYOR DE ANTIOQUIA: 496
+- ALCALDÍA MUNICIPIO DE BELLO: 360
+
+TOP PROVEEDORES
+- Sin Descripcion: 233
+- UNIVERSIDAD DE ANTIOQUIA: 126
+- INSTITUCIÓN UNIVERSITARIA ITM: 80
+- EMPRESA AUTONOMA GUATAPE: 75
+- ESU: 67
+- Empresa de Desarrollo Urbano de La Ceja: 65
+- METROPARQUES: 59
+- EMPRESA PARA LA COMPETITIVIDAD TERRITORIAL DEL MUNICIPIO DE GIRARDOTA: 57
+- EMPRESA DE DESARROLLO TERRITORIAL DE DON MATIAS: 52
+- EMPRESA DE DESARROLLO URBANO Y RURAL DEL MUNICIPIO DE BELLO: 50
+
+MODALIDADES
+- Contratación directa: 15050
+- Contratación régimen especial: 2477
+- Mínima cuantía: 2404
+- Contratación Directa (con ofertas): 1738
+- Contratación régimen especial (con ofertas): 744
+- Selección Abreviada de Menor Cuantía: 705
+- Selección abreviada subasta inversa: 522
+- Licitación pública Obra Publica: 276
+- Concurso de méritos abierto: 225
+- Licitación pública: 219
+- Seleccion Abreviada Menor Cuantia Sin Manifestacion Interes: 27
+- Enajenación de bienes con sobre cerrado: 1
+
+LÍMITES DOF
+- Este reporte detecta patrones para revisión, no prueba irregularidades.
+- La evidencia debe verificarse contra el expediente SECOP en urlproceso.
+- Se excluyeron campos sensibles innecesarios para el piloto.

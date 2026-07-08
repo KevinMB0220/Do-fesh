@@ -1,0 +1,251 @@
+{
+  "generated_at": "2026-07-08T12:14:41",
+  "input_files": [
+    "secop_antioquia_2025_2026_5000.csv",
+    "secop_antioquia_infraestructura_5000.csv",
+    "secop_antioquia_mantenimiento_5000.csv",
+    "secop_antioquia_mayores_500m_5000.csv",
+    "secop_antioquia_muestra_5000.csv",
+    "secop_antioquia_obra_5000.csv"
+  ],
+  "input_file_hashes_sha256": {
+    "secop_antioquia_2025_2026_5000.csv": "230d47b86b1e526a01bfc093e1130d206354325f16403acd102e5df1fa7f0133",
+    "secop_antioquia_infraestructura_5000.csv": "834390589a09ac8f8709e405ef4735ed83a5043803db543baf570b1b9f7778cd",
+    "secop_antioquia_mantenimiento_5000.csv": "d4b308ad712d8e7d2dc1b56d1350f226effc31e9411724eef2c937b2d38026de",
+    "secop_antioquia_mayores_500m_5000.csv": "83d4e07512ee351a896bd10d730c185dca275be6cf5358ab5513b6030779ddfc",
+    "secop_antioquia_muestra_5000.csv": "920e00b254d0b8a25af0424c70cad3e82ccde62e66c20f526364fbb0a56ce2d7",
+    "secop_antioquia_obra_5000.csv": "833d16f718d277bb12d7bedf74925096b833676c20ac8c0d4a0239b508aa1557"
+  },
+  "source_row_counts": {
+    "secop_antioquia_2025_2026_5000.csv": 5000,
+    "secop_antioquia_infraestructura_5000.csv": 5000,
+    "secop_antioquia_mantenimiento_5000.csv": 5000,
+    "secop_antioquia_mayores_500m_5000.csv": 5000,
+    "secop_antioquia_muestra_5000.csv": 5000,
+    "secop_antioquia_obra_5000.csv": 5000
+  },
+  "total_unique_contracts": 24388,
+  "total_contract_value": 40518233524297.0,
+  "high_value_contracts_500m_or_more": 5608,
+  "direct_high_value_contracts_500m_or_more": 3112,
+  "top_entities": [
+    [
+      "INSTITUCIÓN UNIVERSITARIA ITM",
+      1950
+    ],
+    [
+      "DISTRITO ESPECIAL DE CIENCIA TECNOLOGIA E INNOVACION DE MEDELLIN",
+      1637
+    ],
+    [
+      "DEPARTAMENTO DE ANTIOQUIA//",
+      1131
+    ],
+    [
+      "Institución Universitaria Pascual Bravo COMPRADOR",
+      796
+    ],
+    [
+      "INSTITUTO DE DEPORTES Y RECREACION DE MEDELLIN",
+      654
+    ],
+    [
+      "MUNICIPIO DE ENVIGADO*",
+      594
+    ],
+    [
+      "MUNICIPIO DE SABANETA",
+      561
+    ],
+    [
+      "ICBF REGIONAL ANTIOQUIA",
+      540
+    ],
+    [
+      "INSTITUCIÓN UNIVERSITARIA COLEGIO MAYOR DE ANTIOQUIA",
+      496
+    ],
+    [
+      "ALCALDÍA MUNICIPIO DE BELLO",
+      360
+    ],
+    [
+      "MUNICIPIO DE LA ESTRELLA",
+      337
+    ],
+    [
+      "POLITECNICO COLOMBIANO JAIME ISAZA CADAVID",
+      295
+    ],
+    [
+      "SENA REGIONAL ANTIOQUIA Grupo de Apoyo Administrativo Mixto",
+      290
+    ],
+    [
+      "EMPRESA DE DESARROLLO URBANO DE MEDELLIN",
+      267
+    ],
+    [
+      "SENA REGIONAL ANTIOQUIA Grupo Administrativo Intercentros Medellin",
+      228
+    ],
+    [
+      "MUNICIPIO EL RETIRO",
+      227
+    ],
+    [
+      "INSTITUTO DEPARTAMENTAL DE DEPORTES DE ANTIOQUIA",
+      219
+    ],
+    [
+      "ALCALDIA DE GIRARDOTA",
+      217
+    ],
+    [
+      "MUNICIPIO DE GUARNE",
+      208
+    ],
+    [
+      "ALCALDIA DE EL PEÑOL",
+      190
+    ]
+  ],
+  "top_providers": [
+    [
+      "Sin Descripcion",
+      233
+    ],
+    [
+      "UNIVERSIDAD DE ANTIOQUIA",
+      126
+    ],
+    [
+      "INSTITUCIÓN UNIVERSITARIA ITM",
+      80
+    ],
+    [
+      "EMPRESA AUTONOMA GUATAPE",
+      75
+    ],
+    [
+      "ESU",
+      67
+    ],
+    [
+      "Empresa de Desarrollo Urbano de La Ceja",
+      65
+    ],
+    [
+      "METROPARQUES",
+      59
+    ],
+    [
+      "EMPRESA PARA LA COMPETITIVIDAD TERRITORIAL DEL MUNICIPIO DE GIRARDOTA",
+      57
+    ],
+    [
+      "EMPRESA DE DESARROLLO TERRITORIAL DE DON MATIAS",
+      52
+    ],
+    [
+      "EMPRESA DE DESARROLLO URBANO Y RURAL DEL MUNICIPIO DE BELLO",
+      50
+    ],
+    [
+      "ASOCIACION DE MUNICIPIOS DEL NORTE ANTIOQUENO",
+      49
+    ],
+    [
+      "DIEGO LOPEZ S.A.S",
+      47
+    ],
+    [
+      "ESE METROSALUD",
+      45
+    ],
+    [
+      "EMPRESA DE VIVIENDA Y DESARROLLO URBANO Y RURAL DEL MUNICIPIO DE ENVIGADO",
+      44
+    ],
+    [
+      "INSTITUTO PARA EL DESARROLLO DE ANTIOQUIA IDEA",
+      44
+    ],
+    [
+      "EMPRESAS PUBLICAS DE MEDELLIN E.S.P.",
+      41
+    ],
+    [
+      "PLAZA MAYOR MEDELLÍN S.A. - PROVEEDOR",
+      41
+    ],
+    [
+      "EMPRESA DE DESARROLLO, COMPETITIVIDAD Y PRODUCTIVIDAD DE GUARNE - EMEGA",
+      39
+    ],
+    [
+      "EMPRESA PARA EL DESARROLLO TERRITORIAL DE EL BAGRE",
+      39
+    ],
+    [
+      "RENTING DE ANTIOQUIA",
+      36
+    ]
+  ],
+  "modalities": [
+    [
+      "Contratación directa",
+      15050
+    ],
+    [
+      "Contratación régimen especial",
+      2477
+    ],
+    [
+      "Mínima cuantía",
+      2404
+    ],
+    [
+      "Contratación Directa (con ofertas)",
+      1738
+    ],
+    [
+      "Contratación régimen especial (con ofertas)",
+      744
+    ],
+    [
+      "Selección Abreviada de Menor Cuantía",
+      705
+    ],
+    [
+      "Selección abreviada subasta inversa",
+      522
+    ],
+    [
+      "Licitación pública Obra Publica",
+      276
+    ],
+    [
+      "Concurso de méritos abierto",
+      225
+    ],
+    [
+      "Licitación pública",
+      219
+    ],
+    [
+      "Seleccion Abreviada Menor Cuantia Sin Manifestacion Interes",
+      27
+    ],
+    [
+      "Enajenación de bienes con sobre cerrado",
+      1
+    ]
+  ],
+  "dof_limits": [
+    "Las banderas son criterios de priorización, no conclusiones de irregularidad o delito.",
+    "Cada caso debe verificarse manualmente en el expediente SECOP usando urlproceso.",
+    "El análisis usa únicamente columnas no sensibles seleccionadas para el piloto.",
+    "Los datos dependen de la calidad, completitud y actualización de Datos Abiertos Colombia."
+  ]
+}

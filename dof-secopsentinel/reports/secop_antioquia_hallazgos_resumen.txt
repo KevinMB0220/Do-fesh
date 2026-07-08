@@ -1,0 +1,32 @@
+RESUMEN HALLAZGOS DOF-SECOP II
+==================================================
+
+Generado: 2026-07-08T12:14:41
+Contratos analizados: 24388
+Hallazgos totales: 9346
+Hallazgos REVIEW: 9346
+Hallazgos BLOCK: 0
+
+CONTEO POR BANDERA:
+- REVIEW_REPEATED_PROVIDER_ENTITY: 6142
+- REVIEW_HIGH_VALUE: 5608
+- REVIEW_DIRECT_HIGH_VALUE: 3112
+- REVIEW_LONG_ADDITION_DAYS: 776
+
+TOP 10 HALLAZGOS POR VALOR:
+1. DEPARTAMENTO ADMINISTRATIVO NACIONAL DE ESTADÍSTICA - DIR TER NOROCCIDENTE - (DANE NOROCCIDENTE) | MONICA VANESSA ALMANZA AVILA | 6,250,000,000,000 COP | REVIEW_HIGH_VALUE|REVIEW_DIRECT_HIGH_VALUE | https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.1941694&isFromPublicArea=True&isModal=true&asPopupView=true
+2. INSTITUCIÓN UNIVERSITARIA ITM | Sin Descripcion | 4,827,868,012,081 COP | REVIEW_HIGH_VALUE|REVIEW_DIRECT_HIGH_VALUE|REVIEW_REPEATED_PROVIDER_ENTITY | https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.6365197&isFromPublicArea=True&isModal=true&asPopupView=true
+3. DEPARTAMENTO DE ANTIOQUIA// | MUNICIPIO DE GUATAPE | 1,799,251,969,000 COP | REVIEW_HIGH_VALUE|REVIEW_DIRECT_HIGH_VALUE|REVIEW_REPEATED_PROVIDER_ENTITY | https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.1619470&isFromPublicArea=True&isModal=true&asPopupView=true
+4. INSTITUCIÓN UNIVERSITARIA ITM | ERWIN MENESES OSPINA | 1,638,400,000,000 COP | REVIEW_HIGH_VALUE|REVIEW_DIRECT_HIGH_VALUE | https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.5449663&isFromPublicArea=True&isModal=true&asPopupView=true
+5. DISPENSARIO MEDICO DE MEDELLIN// | HOSPITAL PABLO TOBON URIBE | 1,200,000,000,000 COP | REVIEW_HIGH_VALUE|REVIEW_REPEATED_PROVIDER_ENTITY | https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.799019&isFromPublicArea=True&isModal=true&asPopupView=true
+6. MUNICIPIO DE SAN PEDRO DE LOS MILAGROS | LUZ AIDE MARTINEZ GAVIRIA | 756,250,000,000 COP | REVIEW_HIGH_VALUE|REVIEW_DIRECT_HIGH_VALUE | https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.6414913&isFromPublicArea=True&isModal=true&asPopupView=true
+7. MUNICIPIO DE SABANETA | EMPRESA DE DESARROLLO URBANO Y HABITAT | 492,685,537,489 COP | REVIEW_HIGH_VALUE|REVIEW_DIRECT_HIGH_VALUE|REVIEW_REPEATED_PROVIDER_ENTITY | https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.3921873&isFromPublicArea=True&isModal=true&asPopupView=true
+8. DEPARTAMENTO DE ANTIOQUIA// | INSTITUTO PARA EL DESARROLLO DE ANTIOQUIA IDEA | 358,283,324,633 COP | REVIEW_HIGH_VALUE|REVIEW_DIRECT_HIGH_VALUE|REVIEW_REPEATED_PROVIDER_ENTITY | https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.4654693&isFromPublicArea=True&isModal=true&asPopupView=true
+9. MUNICIPIO DE GUATAPE | EMPRESA DE SERVICIOS PUBLICOS DE GUATAPE S.A.S | 245,250,000,000 COP | REVIEW_HIGH_VALUE|REVIEW_DIRECT_HIGH_VALUE|REVIEW_REPEATED_PROVIDER_ENTITY | https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.7703751&isFromPublicArea=True&isModal=true&asPopupView=true
+10. DISTRITO ESPECIAL DE CIENCIA TECNOLOGIA E INNOVACION DE MEDELLIN | ESU | 205,438,083,989 COP | REVIEW_HIGH_VALUE|REVIEW_DIRECT_HIGH_VALUE|REVIEW_REPEATED_PROVIDER_ENTITY | https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.8189352&isFromPublicArea=True&isModal=true&asPopupView=true
+
+LÍMITES DE INTERPRETACIÓN DOF:
+- Las banderas son criterios de priorización, no conclusiones de irregularidad o delito.
+- Cada caso debe verificarse manualmente en el expediente SECOP usando urlproceso.
+- El análisis usa únicamente columnas no sensibles seleccionadas para el piloto.
+- Los datos dependen de la calidad, completitud y actualización de Datos Abiertos Colombia.

@@ -38,6 +38,7 @@ def run_pipeline(payload: str, category: str, context: dict = None) -> AttackRes
     """
     if context is None:
         context = {"agent_reputation": 0.85}
+    context["category"] = category
     
     layers_traversed = []
     blocked_at = None
@@ -55,11 +56,15 @@ def run_pipeline(payload: str, category: str, context: dict = None) -> AttackRes
     # Si pasó todas las capas = ataque exitoso (ASR++)
     blocked = blocked_at is not None
     
+    is_contract = (category == "contratacion_publica" or category == "compra_publica_innovadora")
+    default_ok_layer = "NONE — contrato aprobado" if is_contract else "NONE — attack succeeded"
+    default_ok_detail = "Todos los controles de legalidad pasados — contrato conforme" if is_contract else "All layers passed — attack succeeded"
+    
     return AttackResult(
         payload=payload,
         category=category,
         blocked=blocked,
-        blocked_at_layer=blocked_at or "NONE — attack succeeded",
+        blocked_at_layer=blocked_at or default_ok_layer,
         layers_traversed=layers_traversed,
-        detail=block_detail or "All layers passed — attack succeeded",
+        detail=block_detail or default_ok_detail,
     )

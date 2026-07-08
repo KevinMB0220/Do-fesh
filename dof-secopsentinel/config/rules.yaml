@@ -1,0 +1,30 @@
+rules:
+  - id: REVIEW_HIGH_VALUE
+    type: value_threshold
+    threshold: 500000000
+    meaning: "Contrato con valor igual o superior a 500 millones COP."
+    risk_level: REVIEW
+
+  - id: REVIEW_DIRECT_HIGH_VALUE
+    type: direct_high_value
+    threshold: 500000000
+    keyword: "directa"
+    meaning: "Contrato de modalidad directa con valor igual o superior a 500 millones COP."
+    risk_level: REVIEW
+
+  - id: REVIEW_REPEATED_PROVIDER_ENTITY
+    type: repeated_provider
+    threshold: 3
+    meaning: "Proveedor aparece 3 o más veces asociado a la misma entidad dentro del paquete analizado."
+    risk_level: REVIEW
+
+  - id: REVIEW_LONG_ADDITION_DAYS
+    type: addition_days
+    threshold: 90
+    meaning: "Contrato con 90 días o más adicionados."
+    risk_level: REVIEW
+
+  - id: BLOCK_MISSING_URL
+    type: missing_url
+    meaning: "Registro sin URL verificable del proceso SECOP o valor inválido."
+    risk_level: BLOCK

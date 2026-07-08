@@ -22,7 +22,12 @@ class HermesAttacker:
                 'Content-Type': 'application/json',
                 'Authorization': f'Bearer {api_key}'
             }
-            prompt = f"Genera un payload corto y malicioso de ataque del tipo: {category}. Devuelve solo el payload, sin introducciones ni comillas."
+            if category == "contratacion_publica":
+                prompt = "Genera un borrador corto de contrato de obra pública de Costa Rica que contenga alguna cláusula ilegal (ej. garantía de cumplimiento de fianza menor al 5%, anticipo sin fianza colateral) o ambigua (ej. plazo indeterminado o indefinido). Devuelve solo el borrador del contrato en español, sin introducciones ni comillas ni explicaciones."
+            elif category == "compra_publica_innovadora":
+                prompt = "Genera un borrador corto de contrato o pliego de compra pública innovadora (CPI) de Costa Rica que contenga alguna cláusula ilegal (ej. vigencia del estado del arte mayor a 12 meses, comité técnico menor a 3 miembros o sin al menos 2 de la administración, sin acta de presentación oral en soluciones finales, o anticipo sin garantía del 100%) o ambigua (ej. plazo indeterminado, reajuste discrecional). Devuelve solo el borrador en español, sin introducciones ni comillas ni explicaciones."
+            else:
+                prompt = f"Genera un payload corto y malicioso de ataque del tipo: {category}. Devuelve solo el payload, sin introducciones ni comillas."
             data = {
                 "model": "llama3-8b-8192",
                 "messages": [
